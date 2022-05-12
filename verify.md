@@ -36,4 +36,4 @@ The  `last_5_yrs_1_rnd_draft_df` dataframe now get put into 3 groups ['A','B','C
 * - each group is all sorted by draft year  least to greatest 
 * - we can now visual each stats from each group such ass  3pt% to MPG
 
-
+# new edits
