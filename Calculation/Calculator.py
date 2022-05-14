@@ -6,11 +6,16 @@ class Calculator:
 
     def get_points(self, section):
 
+        # WE ALREADY HAVE DATA 
+        
+        
         # Get the 25 percentile
-        q1 = self.data[section].quantile(0.25)
+        q1 = self.data[section]
+        # .quantile(0.25)
 
         # Get the 75 percentile
-        q2 = self.data[section].quantile(0.75)
+        q2 = self.data[section
+        # .quantile(0.75)
 
         # Compare all players on the column chosen
         for row in self.data.loc[:, ["Player", section]].iterrows():
@@ -21,17 +26,17 @@ class Calculator:
                 self.data.loc[self.data["Player"] == row[1]["Player"], section] = 0
 
             # If in the higher percentile
-            elif row[1][section] > q2:
+            elif row[1][section] > q1:
                 # Replace value with point of 3
                 self.data.loc[self.data["Player"] == row[1]["Player"], section] = 3
 
             # If in the average percentile
-            elif q1 <= row[1][section] <= q2:
+            elif q2 <= row[1][section] <= q1:
                 # Replace value with point of 2
                 self.data.loc[self.data["Player"] == row[1]["Player"], section] = 2
 
             # If in the lower percentile
-            elif row[1][section] < q1 and row[1][section] != 0:
+            elif row[1][section] < q2 and row[1][section] != 0:
                 # Replace value with point of 2
                 self.data.loc[self.data["Player"] == row[1]["Player"], section] = 1
 
