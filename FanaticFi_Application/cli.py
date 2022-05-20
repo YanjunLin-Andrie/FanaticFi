@@ -102,7 +102,7 @@ def get_investor_info():
     if invest == 'Yes':
         amt = questionary.text('How much would you like to invest?').ask()
         print(f"With a $ {amt} investment, your projected ROI is 87.24%")
-        cont = questionary.select('Would you like to continue with the investment?', choices=['Yes','No'])
+        cont = questionary.select('Would you like to continue with the investment?', choices=['Yes','No']).ask()
         if cont == 'Yes':
             email = questionary.text('Please enter your email:').ask()
             print('Great! Our team will contact you shortly to help you set up your investor profile.')
