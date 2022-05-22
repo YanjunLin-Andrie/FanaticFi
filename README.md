@@ -29,42 +29,51 @@ In this project, we used NBA first round draft data from the last 5 years and an
 
 **Data findings:**
 
->`More NBA picks came from Kentucky, Duke, and UNC than other schools`
+>More NBA picks came from Kentucky, Duke, and UNC than other schools
+
 ![pic](images/school.png)
 
->`Quality and quantity of NBA picks from top schools are declining over the last 5 years`
+>Quality and quantity of NBA picks from top schools are declining over the last 5 years
+
 ![pic](images/picks.png)
 
->`FG%, 3P%, and FT% have higher correlation with players' contract worth than other aspects`
+>FG%, 3P%, and FT% have higher correlation with players' contract worth than other aspects
+
 ![pic](images/correlation.png)
 
->`MPG, PPG are weighted heavy by NBA teams`
+>MPG, PPG are weighted heavy by NBA teams
+
 ![pic](images/radar.png)
 
 ### Analysis & calculation
 ---
->`Calculators were designed to calculate historical draftees' statistics by positions. Draftees' performances data were devided into above average, average, and below average categories.`
+>Calculators were designed to calculate historical draftees' statistics by positions. Draftees' performances data were devided into above average, average, and below average categories.
+
 ![pic](images/calc.png)
 
->`Points were calculated for 2022 draftees by each position`
+>Points were calculated for 2022 draftees by each position
+
 ![pic](images/points.png)
 
 ### Results & prediction
 ---
->`Established a new data frame containing players' points and projected minimum, maximum, and mean contract range`
+>Established a new data frame containing players' points and projected minimum, maximum, and mean contract range
+
 ![pic](images/results.png)
 
->`Athletes by using our interactive application will be able to get an estimated contract range by entering in their performance statistics`
+>Athletes by using our interactive application will be able to get an estimated contract range by entering in their performance statistics
+
 ![pic](images/player.png)
 
->`Investors by using our interactive application will be able to choose up coming draftees to invest in based on their projected contract range and get a profit estimation`
+>Investors by using our interactive application will be able to choose up coming draftees to invest in based on their projected contract range and get a profit estimation
+
 ![pic](images/investor.png)
 
->`M-inimal: the most simplistic solution`
+>M-inimal: the most simplistic solution
 
->`V-iable: sufficient enough for early adopters`
+>V-iable: sufficient enough for early adopters
 
->`P-roduct: user interactive application`
+>P-roduct: user interactive application
 
 ![pic](images/product.png)
 
