@@ -115,11 +115,13 @@ MIT
 ### Contributors
 ---
 **Andrie Yanjun Lin**
-[E-mail](yanjun.lin.andrie@gmail.com)
+
+[E-mail](yanjun.lin.andrie@gmail.com)  |   
 [LinkedIn](https://www.linkedin.com/in/yanjun-linked)
 
 **Arlie Jones**
-[E-mail](arliejones98@gmail.com)
+
+[E-mail](arliejones98@gmail.com)  |  
 [LinkedIn](https://www.linkedin.com/in/arlie-jones-020092159/)
 
 **Olivia Heitzo**
