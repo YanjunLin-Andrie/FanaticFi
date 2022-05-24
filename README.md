@@ -136,8 +136,7 @@ MIT
 
 
 **Santiago Hernandez**
-*
-*
 
+[LinkedIn](https://www.linkedin.com/in/robert-smith-7539a7233/)
 
 **CREDIT: UC BERKELEY**
