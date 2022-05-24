@@ -32,44 +32,51 @@ def get_athlete_stats():
         three_p_pct = float(input('What is your average 3 pointer percentage? Please enter in number format (ex: 0.456): '))
         ft_pct = float(input('What is your average free throw percentage? Please enter in number format (ex: 0.456): '))
         csvwriter.writerow([2022, "", "", pos, "", "", "", mpg, ppg, "", "", rpg, apg, fg_pct, "", "", three_p_pct, "", "", ft_pct, "", "", "", "", "", ""])
-    athlete_points()
+        print('Calculating your contract range...')
 
-#  Get total points of the player's input 
-def athlete_points():
-    athlete_df = pd.read_csv(Path('2022_top_30.csv'))
-    new_data = Calculator(athlete_df)
-    new_data.get_points('MPG')
-    new_data.get_points('PPG')
-    new_data.get_points('RPG')
-    new_data.get_points('APG')
-    new_data.get_points('FG%')
-    new_data.get_points('3P%')
-    new_data.get_points('FT%')
-    new_data.get_total()
-    total_points = new_data.geth_total()
-    return total_points
+    # Our team ran into some issue getting contract range based on new input. We will update soon.
 
-def load_athlete_points():
-    csvpath = Path('_22_all_stats.csv')
-    return pd.read_csv(csvpath)
 
-# Use total points generate contract range    
-def get_contract_range():
-    points_to_contract_df = load_athlete_points()
-    total_points
-    low = points_to_contract_df.loc[points_to_contract_df['Pos'] == pos,].values
-    high = 
 
-    print(f"Based on our analysis, your projected contract range is {low} - {high}")
-    signup = questionary.select('Would you like to sign up to recieve investments?', choices=['Yes','No']).ask()
 
-    if signup == 'Yes':
-        email = questionary.text('Please enter your email:').ask()
-        print('Great! Our team will contact you shortly to create your profile.')
-    if signup == 'No':
-        print('Thanks for using FanaticFi. Good luck in the draft!')
+    # athlete_points()
+
+# #  Get total points of the player's input 
+# def athlete_points():
+#     athlete_df = pd.read_csv(Path('2022_top_30.csv'))
+#     new_data = Calculator(athlete_df)
+#     new_data.get_points('MPG')
+#     new_data.get_points('PPG')
+#     new_data.get_points('RPG')
+#     new_data.get_points('APG')
+#     new_data.get_points('FG%')
+#     new_data.get_points('3P%')
+#     new_data.get_points('FT%')
+#     new_data.get_total()
+#     total_points = new_data.get_total()
+#     return total_points
+
+# def load_athlete_points():
+#     csvpath = Path('_22_all_stats.csv')
+#     return pd.read_csv(csvpath)
+
+# # Use total points generate contract range    
+# # def get_contract_range():
+# #     points_to_contract_df = load_athlete_points()
+# #     total_points
+# #     low = points_to_contract_df.loc[points_to_contract_df['Pos'] == pos,].values
+# #     high = 
+
+    # print(f"Based on our analysis, your projected contract range is {low} - {high}")
+    # signup = questionary.select('Would you like to sign up to recieve investments?', choices=['Yes','No']).ask()
+
+    # if signup == 'Yes':
+    #     email = questionary.text('Please enter your email:').ask()
+    #     print('Great! Our team will contact you shortly to create your profile.')
+    # if signup == 'No':
+    #     print('Thanks for using FanaticFi. Good luck in the draft!')
     
-    return low, high
+    # return low, high
     
 
 
