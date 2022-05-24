@@ -129,8 +129,11 @@ MIT
 * 
 
 **Robert Smith**
-*
-*
+
+[E-mail](brprod8@gmail.com)   
+
+[LinkedIn](https://www.linkedin.com/in/robert-smith-7539a7233/)
+
 
 **Santiago Hernandez**
 *
