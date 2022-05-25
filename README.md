@@ -125,8 +125,8 @@ MIT
 [LinkedIn](https://www.linkedin.com/in/arlie-jones-020092159/)
 
 **Olivia Heitzo**
-* 
-* 
+[E-mail](oliviabheitz@gmail.com)   
+[LinkedIn](https://www.linkedin.com/in/olivia-heitz/)
 
 **Robert Smith**
 
