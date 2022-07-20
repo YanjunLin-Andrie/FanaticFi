@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>ML API</title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="{{ url_for('static', filename='styles/style.css') }}">
+  
+</head>
+
+<body>
+ <div class="login">
+	<h1>Predict NBA Draft Rank</h1>
+
+     <!-- Main Input For Receiving Query to our ML -->
+    <form action="{{ url_for('predict')}}"method="post">
+		    <input type="text" name="MPG" placeholder="Minutes Played Per Game" required="required" />
+        <input type="text" name="PPG" placeholder="Points Scored Per Game" required="required" />
+		    <input type="text" name="RPG" placeholder="Rebounds Per Game" required="required" />
+        <input type="text" name="APG" placeholder="Assists Per Game" required="required" />
+
+        <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+    </form>
+
+   <br>
+   <br>
+   {{ prediction_text }}
+
+ </div>
+ <img src="{{ url_for('static', filename='logo.png') }}" style="width: 100px;position: absolute;top: 10px;left: 10px;" alt="Logo"/>
+
+</body>
+</html>
